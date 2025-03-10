@@ -1,0 +1,186 @@
+/* Reset and base styles */
+body {
+  background-color: rgb(234, 194, 194);
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Shared styles for containers */
+.formContainer, .container {
+  width: 400px;            /* Fixed consistent width */
+  padding: 25px;
+  margin: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* General input styling */
+.input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Buttons styling */
+.submitButton, .logoutButton {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.submitButton {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.logoutButton {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.link {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Main container styling */
+.container {
+  width: 100%;
+  max-width: 500px;   /* Slightly increased for better spacing */
+  background-color: beige;
+  text-align: center;
+  padding: 30px;
+}
+
+.heading {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.subHeading {
+  font-size: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#alert {
+  color: green;
+  margin-left: 5px;
+}
+
+/* Password list styles */
+.table {
+  margin: 2rem 0;
+}
+
+.passwordItem {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.listValue {
+  margin-right: 15px;
+  font-size: 16px;
+}
+
+.listLabel {
+  font-weight: bold;
+  width: 120px; /* More room for labels */
+  font-size: 16px;
+}
+
+/* Icons styling */
+.showPasswordIcon {
+  cursor: pointer;
+  margin-left: 16px;
+  color: #007bff;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.showPasswordIcon:hover {
+  color: #0056b3;
+}
+
+.copyIcon,
+.editIcon,
+.deleteIcon {
+  cursor: pointer;
+  color: #555;
+  font-size: 18px;
+  transition: color 0.3s;
+  margin-left: 10px;
+}
+
+.copyIcon:hover,
+.editIcon:hover,
+.deleteIcon:hover {
+  color: #007bff;
+}
+
+/* Buttons for adding passwords */
+.submitButton {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.noData {
+  text-align: center;
+  color: #777;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+/* Responsive (optional if you want it mobile-friendly) */
+@media (max-width: 500px) {
+  .formContainer, .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .listItem {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .subHeading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
